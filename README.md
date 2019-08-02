@@ -47,3 +47,17 @@ module.exports = {
       ]
 }
 ```
+
+## gitlabci
+```
+build:
+  stage: build
+  only:
+  - master
+  - tags
+  script:
+  - npm config set @mi:registry http://registry.npm.pt.mi.com/
+  - npm install
+  - npm run build # / dist
+  - node /node_modules/galaxy-fds-sdk-nodejs/lib/bin.js dist $id $key $machine
+```

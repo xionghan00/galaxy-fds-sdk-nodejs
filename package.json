@@ -1,34 +1,68 @@
 {
-  "name": "galaxy-fds-sdk-nodejs",
-  "version": "0.0.2",
+  "_from": "@mi/fds",
+  "_id": "@mi/fds@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-osQaiqawAzbL2PsntEKACZWBrjI=",
+  "_location": "/@mi/fds",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@mi/fds",
+    "name": "@mi/fds",
+    "escapedName": "@mi%2ffds",
+    "scope": "@mi",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.pt.mi.com/@mi/fds/download/@mi/fds-0.0.2.tgz",
+  "_shasum": "a2c41a8aa6b00336cbd8fb27b44280099581ae32",
+  "_spec": "@mi/fds",
+  "_where": "/Users/surui/galaxy-fds-sdk-nodejs",
+  "author": "",
+  "bin": {
+    "fds": "lib/bin.js"
+  },
+  "bugs": {
+    "url": "https://github.com/letyougo/galaxy-fds-sdk-nodejs/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "directory-tree": "^2.2.3",
+    "mime": "^2.4.4",
+    "mine": "^0.1.0",
+    "moment": "^2.24.0",
+    "webpack": "^4.34.0"
+  },
+  "deprecated": false,
   "description": "``` const id = 'your id' const key = 'your secrect key' let fds = new FDS(id,key, url) // url 机房",
-  "main": "lib/index.js",
-  "module": "lib/index.js",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-cli": "^3.3.4"
+  },
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack ./webpack.config.js"
-  },
+  "homepage": "https://github.com/letyougo/galaxy-fds-sdk-nodejs#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "name": "@mi/fds",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/letyougo/galaxy-fds-sdk-nodejs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/letyougo/galaxy-fds-sdk-nodejs/issues"
+  "scripts": {
+    "build": "webpack ./webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node lib/bin.js views AKJI6HFZDZTDCYURVI aPi1aj4s9tGDqjpnPHOauYlnK92GSnV93bDmSsRm cnbj1-fds.api.xiaomi.net gaoyamei"
   },
-  "homepage": "https://github.com/letyougo/galaxy-fds-sdk-nodejs#readme",
-  "dependencies": {
-    "mine": "^0.1.0",
-    "axios": "^0.19.0",
-    "moment": "^2.24.0",
-    "webpack": "^4.34.0"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.4"
-  }
+  "version": "0.0.2"
 }
