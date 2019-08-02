@@ -64,5 +64,5 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "node lib/bin.js views AKJI6HFZDZTDCYURVI aPi1aj4s9tGDqjpnPHOauYlnK92GSnV93bDmSsRm cnbj1-fds.api.xiaomi.net gaoyamei"
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

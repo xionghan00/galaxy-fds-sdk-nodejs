@@ -27,7 +27,7 @@ fds.putObject(bucket_name,object_name,'file content',cb)
 fds.deleteObjects(bucket_name,object_name,cb)
 ```
 
-## webpack 
+## webpack (需要放在HtmlWebpackPlugin后面)
 ```
 
 module.exports = {
@@ -59,5 +59,5 @@ build:
   - npm config set @mi:registry http://registry.npm.pt.mi.com/
   - npm install
   - npm run build # / dist
-  - node /node_modules/galaxy-fds-sdk-nodejs/lib/bin.js dist $id $key $machine
+  - node /node_modules/galaxy-fds-sdk-nodejs/lib/bin.js dist $id $key $machine bucketName
 ```
